@@ -1,0 +1,131 @@
+:root{
+	--gn:green;
+	--re:red;
+}
+
+.div1{
+	width: 100px;
+	height: 80px;
+	background: orange;
+
+
+
+	/*Vendors Prefix Properties*/
+	-webkit-transform:rotate(180deg); /* Chrome Safri  and Opera -o- (or) webkit , -ms- for Internet Explorer*/
+	-moz-transform:rotate(180deg); /* Mozila Firefox */
+	transform:rotate(180deg);
+}
+
+
+.div2{
+	width: 100px;
+	height: 80px;
+	background: gold;
+
+
+	-webkit-transform:rotateX(50deg); /* Chrome Safri  and Opera -o- (or) webkit , -ms- for Internet Explorer*/
+	-moz-transform:rotateX(50deg); /* Mozila Firefox */
+	transform:rotateX(50deg);
+}
+
+.div3{
+	width: 100px;
+	height: 80px;
+	background: gray;
+
+
+	-webkit-transform:rotateY(50deg); /* Chrome Safri  and Opera -o- (or) webkit , -ms- for Internet Explorer*/
+	-moz-transform:rotateY(50deg); /* Mozila Firefox */
+	transform:rotateY(50deg);
+}
+
+.div4{
+	width: 100px;
+	height: 80px;
+	background: var(--gn);
+
+
+							/*x*/
+	/*transform:translate(100px);*/
+	transform: translateX(100px);
+
+
+						/*x and y*/
+	/*transform:translate(100px,50px);*/
+	/*transform: translate(0,100px);*/
+	/*transform:translateY(100px);*/
+}
+
+.div5{
+	width: 100px;
+	height: 80px;
+	background: var(--re);
+	color: white;
+
+	/*double size*/
+	transform:scale(1.2);
+}
+
+
+.country{
+	font-size: 16px;
+
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+
+			/*top right bottom left*/
+	padding: 10px 25px 10px 10px;
+
+	background: transparent;
+	background-image:url(https://cdn.iconscout.com/icon/free/png-256/down-arrow-16-460295.png);
+	background-size:20px;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-position-x: 90%;
+
+}
+
+.country:focus{
+	outline: 0;
+}
+
+
+h1{
+	font-size: 70px;
+}
+
+p.text1{
+	color: blue;
+}
+
+@media(max-width: 650px){
+	h1{
+		font-size: 40px;
+	}
+
+	p.text1{
+		color: red;
+	}
+}
+
+div.circle1{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+
+	background:conic-gradient(
+		/*yellow 30%,
+		red 0 60%,
+		green 0 75%,
+		pink 0*/
+
+		#bf2419 40%,
+		#233cde 0 60%,
+		#d4d64b 0
+
+		);
+}
+
+
+/*25ATT WDFxxxx*/

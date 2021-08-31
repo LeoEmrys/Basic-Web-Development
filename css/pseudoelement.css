@@ -1,0 +1,17 @@
+.paragrph1::first-line{
+	color:blue;
+}
+
+
+/*.paragrph1::before{
+	content:"ABC ";
+}
+
+.paragrph1::after{
+	content:"EFG ";
+}*/
+
+.paragrph1::first-letter{
+	color:red;
+	font-size: 50px;
+}

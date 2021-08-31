@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Tag</title>
+</head>
+<body>
+
+	<!-- Stand alone attribute -->
+	<!-- (autofoucs , checked , selected , multiple) -->
+
+<fieldset>
+	<legend>This is sample Form &#x000A5;&raquo;&#x000A9;</legend>
+		<form action="" method="" enctype="multipart/form-data">
+		<!-- input elemets -->
+		<label for="firstname">First Name</label>
+		<input type="text" name="firstname" id="firstname" class="" placeholder="Enter your first name"  maxlength="5" />
+
+		<br/><br/>
+
+		<label for="lastname">Last Name</label>
+		<input type="text" name="lastname" id="lastname" class="" placeholder="Enter your last name" minlength="3" />
+
+		<br/><br/>
+
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password" class="" placeholder="Enter your password" />
+
+		<br/><br/>
+
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" class="" placeholder="Enter your email address" autofocus/>
+
+		<br/><br/>
+
+		<label for="favnum">Fav Number</label>
+		<input type="number" name="favnum" id="favnum" class="" placeholder="Enter your fav number" />
+		
+		<br/><br/>
+
+		<label>Gender</label>
+		<input type="radio" name="gender" id="gndm" class="" value="1" /><label for="gndm">Male</label>
+		<input type="radio" name="gender" id="gndf" class="" value="0" checked/><label for="gndf">Female</label>
+
+		<br/><br/>
+
+		<label>Fav Color</label>
+		<input type="checkbox" name="favcolor" id="favcred" class="" value="re" checked /><label for="favcred">Red</label>
+		<input type="checkbox" name="favcolor" id="favcblack" class="" value="bla" checked/><label for="favcblack">Black</label>
+		<input type="checkbox" name="favcolor" id="favcblue" class="" value="blu" checked/><label for="favcblue">Blue</label>
+
+<br/><br/>
+
+		<label for="country">Country</label>
+
+		<select name="country" id="country" class="" >
+			<option selected disabled>Choose Country</option>
+			<option value="mm">Myanmar</option>
+			<option value="th">Thailand</option>
+			<option value="indo" >Indonesia</option>
+			<option value="slk">Srilanka</option>
+		</select>
+
+<br/><br/>
+
+		<label for="week">Week</label>
+		<input type="week" name="week" id="week" class=""/>
+
+		<br/><br/>
+
+		<label for="date">Date</label>
+		<input type="date" name="date" id="date" class=""/>
+
+		<br/><br/>
+
+		<label for="time">Time</label>
+		<input type="time" name="time" id="time" class=""/>
+
+		<br/><br/>
+
+		<label for="datetime">Date Time</label>
+		<input type="datetime-local" name="datetime" id="datetime" class=""/>
+
+		<br/><br/>
+
+		<label for="attfile">Attach File</label>
+		<input type="file" name="attfile" id="attfile" class="" multiple>
+
+		<br/><br/>
+
+		<input type="button" name="cancel" id="cancel" class="" value="Cancel" />
+		<input type="reset" name="reset" id="reset" class="" />
+		<button type="submit" name="submit" id="submit" class="">Register</button>
+
+	</form>
+</fieldset>
+
+
+
+</body>
+</html>
+
+

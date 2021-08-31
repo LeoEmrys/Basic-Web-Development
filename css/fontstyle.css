@@ -1,0 +1,123 @@
+
+/*Local Font Integrate*/
+
+/*body{
+	font-family:Arial,Cambria,Century,Zawgyi-One;
+}*/
+
+
+/*Global Font Integrate*/
+/*at-rules*/
+/*@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');*/
+
+/*Local Font Integrate from google*/
+
+
+@font-face{
+	font-family:Stick;
+	src:local('Stick-Regular'),url('../assets/libs/stick/Stick-Regular.ttf') format('woff');
+}
+
+@font-face{
+	font-family:'Akaya Telivigala';
+	src:local('AkayaTelivigala-Regular'),url('../assets/libs/akayatelivigala/AkayaTelivigala-Regular.ttf') format('woff');
+}
+
+
+
+body{
+	font-family:Stick;
+}
+
+
+
+
+.p3{
+	font-family: 'Akaya Telivigala';
+}
+
+
+
+/*text indentation*/
+.p2{
+	font-family:Arial,Cambria,Century,Zawgyi-One;
+	/*font-weight: bold;*/
+	/*font-weight:600;*/ 	/*100 to 900*/
+	/*font-style:italic;*/
+
+	text-indent:50px;
+
+
+	/*text-transform:uppercase;*/
+	/*text-transform: capitalize;*/
+	/*text-transform: lowercase;*/
+
+	font-variant: small-caps;
+
+}
+
+
+.a1{
+	color: red;
+	text-decoration:none;
+}
+
+.a1:visited{
+	color:gray;
+}
+
+.a1:hover{
+	color:blue;
+	text-decoration:underline;
+}
+
+
+.menutext{
+	font-family:Arial,Cambria,Century,Zawgyi-One;
+
+	text-decoration: none;
+	background:green;
+	color: white;
+
+	/*padding:20px;*/
+	/*H W*/
+	/*padding: 10px 30px; */
+
+	padding-top:10px;
+	padding-bottom: 10px;
+	padding-left:20px;
+	padding-right:20px;
+
+	
+}
+
+
+.menutext:hover{
+	color: gold;
+	background-color:blue;
+	font-size: 20px;
+	transition: 1s;
+	border-radius: 100px;
+}
+
+.menutext:active{
+	color: red;
+}
+
+.imgdesign{
+	width:80px;
+	height: 80px;
+	cursor: pointer;
+}
+
+.imgdesign:hover{
+	width: 100px;
+	height: 100px;
+	transition: 1s;
+}
+
+
+
+
+
+

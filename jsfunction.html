@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Function</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	// function name(){
+	// 	code;
+	// }
+	// name();
+
+
+	//1 Manual Function
+	function greet(){
+		console.log("Hello Mandalay");
+	}
+
+	// greet();
+
+	function printalert(){
+		window.alert("Hello Myanmar");
+	}
+
+	// printalert();
+
+	function hello(){
+
+		return "Hello Yangon";
+	}
+
+	// console.log(hello());
+	// window.alert(hello());
+	// document.write(hello());
+
+
+	//2 Parameter Function
+	// Single Parameter Function
+
+	function myfun1(city){
+		console.log("Hello "+ city);
+	}
+
+	myfun1("Yangon");
+
+
+	function myfun2(city="Mandalay"){
+		console.log(city);
+	}
+
+	myfun2();
+
+
+
+	// Multi Parameter Function
+
+	function multifun1(x,y){
+
+		console.log("X value is = " + x + " Y value is = "+ y );
+
+	}
+
+	multifun1(10,20);
+
+
+
+	function multifun2(x,y,z){
+		const result = x+y+z;
+		return result;
+	}
+
+
+	console.log(multifun2(10,20,30));
+
+
+	function multifun3(x,y,z=100){
+		const result = x+y+z;
+		return result;
+	}
+
+	console.log(multifun3(10,20));
+
+
+	// 3 Constructor Function (By String)
+
+	let confun = new Function("j","k","return j+k");
+		console.log(confun(10,20));
+
+
+
+	// 4 Name Less Function (Anonymous Function)
+	let annfun = function (a){
+			document.write("My value is = "+ a);
+		};
+
+		annfun(100);
+
+	// 5 Self Invoking Function
+	//Immediately Invokable Function Expressions (IIFE)
+
+	let slfun1 = function (a){
+		document.write("i am self invoking function , my value is = " + a);
+	} (300);
+
+
+	(function (b){
+		document.write("i am self invoking function , my value is = " + b);
+	}) (500);
+
+
+
+
+
+
+
+	// Get Function Name (.name)
+
+	function funone(){
+		console.log('Hello World');
+	}
+
+	function funtwo(fun){
+		console.log(`${fun.name}`);
+	}
+
+	funtwo(funone);
+
+
+
+	//call()
+
+	let myarrs = [];
+
+	function myfunone(){
+		console.log(`i am myfunone ${Math.floor(Math.random()*10+1)}`);
+	}
+
+	myarrs.push(myfunone);
+	myarrs.push(myfunone);
+	myarrs.push(myfunone);
+
+	console.log(myarrs);
+
+
+	function myfuntwo(){
+		myarrs.forEach(function(myarr){
+			myarr.call();
+		});
+	}
+
+
+	myfuntwo();
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
